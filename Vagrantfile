@@ -15,9 +15,10 @@ Vagrant.configure("2") do |config|
 
   # The url from where the 'config.vm.box' box will be fetched if it
   # doesn't already exist on the user's system.
-  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
-
-  # Vbguest Plugin
+  #config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+	config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-amd64-vagrant-disk1.box"
+  
+	# Vbguest Plugin
   # We will try to autodetect this path.
   # However, if we cannot or you have a special one you may pass it like:
   # config.vbguest.iso_path = "#{ENV['HOME']}/Downloads/VBoxGuestAdditions.iso"

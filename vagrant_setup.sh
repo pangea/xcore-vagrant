@@ -15,7 +15,7 @@ cdir() {
 }
 
 # install git
-sudo apt-get install git -y
+sudo apt-get install git -y -q
 echo "Git has been installed!"
 
 # this is temporary fix for the problem where Windows
